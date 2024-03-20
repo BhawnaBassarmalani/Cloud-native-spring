@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polarbookshop.catalogservice.CatalogServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-24T18:17:20" hostname="Bhawnas-MacBook-Pro.local" time="0.387">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.polarbookshop.catalogservice.CatalogServiceApplicationTests" time="0.387"/>
+  <system-out><![CDATA[13:17:19.701 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.CatalogServiceApplicationTests]: CatalogServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:17:19.745 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.CatalogServiceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-02-24T13:17:19.882-05:00  INFO 57646 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : Starting CatalogServiceApplicationTests using Java 17.0.10 with PID 57646 (started by bhawnabassarmalani in /Users/bhawnabassarmalani/Downloads/catalog-service)
+2024-02-24T13:17:19.883-05:00  INFO 57646 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-02-24T13:17:20.321-05:00  INFO 57646 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : Started CatalogServiceApplicationTests in 0.521 seconds (process running for 0.969)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
