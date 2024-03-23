@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.666s</div>
+<div class="counter">0.660s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,36 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="whenPostRequestThenBookCreated()"></a>
-<h3 class="failures">whenPostRequestThenBookCreated()</h3>
-<span class="code">
-<pre>java.lang.AssertionError: 
-Expecting actual not to be null
-	at com.polarbookshop.catalogservice.CatalogServiceApplicationTests.lambda$whenPostRequestThenBookCreated$0(CatalogServiceApplicationTests.java:26)
-	at org.springframework.test.web.reactive.server.DefaultWebTestClient$DefaultBodySpec.lambda$value$3(DefaultWebTestClient.java:557)
-	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:222)
-	at org.springframework.test.web.reactive.server.DefaultWebTestClient$DefaultBodySpec.value(DefaultWebTestClient.java:557)
-	at com.polarbookshop.catalogservice.CatalogServiceApplicationTests.whenPostRequestThenBookCreated(CatalogServiceApplicationTests.java:25)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -101,17 +78,17 @@ Expecting actual not to be null
 </tr>
 </thead>
 <tr>
-<td class="failures">whenPostRequestThenBookCreated()</td>
-<td class="failures">0.666s</td>
-<td class="failures">failed</td>
+<td class="success">whenPostRequestThenBookCreated()</td>
+<td class="success">0.660s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:03:50.268 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.CatalogServiceApplicationTests]: CatalogServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:03:50.312 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.CatalogServiceApplicationTests
+<pre>12:11:25.286 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.CatalogServiceApplicationTests]: CatalogServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:11:25.335 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.CatalogServiceApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -121,38 +98,19 @@ Expecting actual not to be null
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.3)
 
-2024-03-22T23:03:50.481-04:00  INFO 48957 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : Starting CatalogServiceApplicationTests using Java 17.0.10 with PID 48957 (started by bhawnabassarmalani in /Users/bhawnabassarmalani/Desktop/Projects/Cloud-native-spring)
-2024-03-22T23:03:50.481-04:00  INFO 48957 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-03-22T23:03:50.870-04:00  INFO 48957 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2024-03-22T23:03:50.876-04:00  INFO 48957 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-03-22T23:03:50.877-04:00  INFO 48957 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-03-22T23:03:50.903-04:00  INFO 48957 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-03-22T23:03:50.904-04:00  INFO 48957 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 416 ms
-2024-03-22T23:03:51.131-04:00  INFO 48957 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 49869 (http) with context path ''
-2024-03-22T23:03:51.136-04:00  INFO 48957 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : Started CatalogServiceApplicationTests in 0.768 seconds (process running for 1.265)
-2024-03-22T23:03:51.652-04:00 ERROR 48957 --- [    Test worker] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-2024-03-22T23:03:51.775-04:00  INFO 48957 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-03-22T23:03:51.775-04:00  INFO 48957 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-03-22T23:03:51.776-04:00  INFO 48957 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-03-22T23:03:51.866-04:00 ERROR 48957 --- [    Test worker] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
-
-&gt; POST http://localhost:49869/books
-&gt; accept-encoding: [gzip]
-&gt; user-agent: [ReactorNetty/1.1.16]
-&gt; host: [localhost:49869]
-&gt; accept: [*/*]
-&gt; WebTestClient-Request-Id: [1]
-&gt; Content-Type: [application/json]
-&gt; Content-Length: [67]
-
-{&quot;isbn&quot;:&quot;1231231231&quot;,&quot;title&quot;:&quot;Title&quot;,&quot;author&quot;:&quot;Author&quot;,&quot;price&quot;:9.9}
-
-&lt; 201 CREATED Created
-&lt; Content-Length: [0]
-&lt; Date: [Sat, 23 Mar 2024 03:03:51 GMT]
-
-0 bytes of content (unknown content-type).
-
+2024-03-23T12:11:25.519-04:00  INFO 1455 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : Starting CatalogServiceApplicationTests using Java 17.0.10 with PID 1455 (started by bhawnabassarmalani in /Users/bhawnabassarmalani/Desktop/Projects/Cloud-native-spring)
+2024-03-23T12:11:25.519-04:00  INFO 1455 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-03-23T12:11:25.941-04:00  INFO 1455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-03-23T12:11:25.947-04:00  INFO 1455 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-23T12:11:25.947-04:00  INFO 1455 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-23T12:11:25.979-04:00  INFO 1455 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-23T12:11:25.979-04:00  INFO 1455 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 452 ms
+2024-03-23T12:11:26.211-04:00  INFO 1455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 49507 (http) with context path ''
+2024-03-23T12:11:26.216-04:00  INFO 1455 --- [    Test worker] c.p.c.CatalogServiceApplicationTests     : Started CatalogServiceApplicationTests in 0.822 seconds (process running for 1.281)
+2024-03-23T12:11:26.733-04:00 ERROR 1455 --- [    Test worker] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2024-03-23T12:11:26.851-04:00  INFO 1455 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-23T12:11:26.851-04:00  INFO 1455 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-23T12:11:26.852-04:00  INFO 1455 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 </pre>
 </span>
 </div>
@@ -164,7 +122,7 @@ Expecting actual not to be null
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.5</a> at Mar 22, 2024, 11:03:54 PM</p>
+<a href="http://www.gradle.org">Gradle 8.5</a> at Mar 23, 2024, 12:11:29 PM</p>
 </div>
 </div>
 </body>
