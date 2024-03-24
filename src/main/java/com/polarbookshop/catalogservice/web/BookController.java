@@ -3,6 +3,7 @@ package com.polarbookshop.catalogservice.web;
 
 import com.polarbookshop.catalogservice.domain.Book;
 import com.polarbookshop.catalogservice.domain.BookService;
+import com.polarbookshop.catalogservice.persistence.InMemoryBookRepository;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
