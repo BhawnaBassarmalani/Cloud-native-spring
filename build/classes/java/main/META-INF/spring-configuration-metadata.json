@@ -10,6 +10,7 @@
     {
       "name": "polar.greeting",
       "type": "java.lang.String",
+      "description": "A message to welcome users.",
       "sourceType": "com.polarbookshop.catalogservice.config.PolarProperties"
     }
   ],

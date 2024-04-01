@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polarbookshop.catalogservice.web.BookControllerMvcTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-28T21:59:38" hostname="Bhawnas-MacBook-Pro.local" time="0.027">
+  <properties/>
+  <testcase name="whenGetBookNotExistingThenShouldReturn404()" classname="com.polarbookshop.catalogservice.web.BookControllerMvcTests" time="0.027"/>
+  <system-out><![CDATA[2024-03-28T17:59:38.057-04:00  INFO 51452 --- [catalog-service] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.web.BookControllerMvcTests]: BookControllerMvcTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-28T17:59:38.065-04:00  INFO 51452 --- [catalog-service] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.web.BookControllerMvcTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-03-28T17:59:38.105-04:00  INFO 51452 --- [catalog-service] [    Test worker] c.p.c.web.BookControllerMvcTests         : Starting BookControllerMvcTests using Java 17.0.10 with PID 51452 (started by bhawnabassarmalani in /Users/bhawnabassarmalani/Desktop/Projects/Cloud-native-spring)
+2024-03-28T17:59:38.105-04:00  INFO 51452 --- [catalog-service] [    Test worker] c.p.c.web.BookControllerMvcTests         : No active profile set, falling back to 1 default profile: "default"
+2024-03-28T17:59:38.106-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-03-28T17:59:38.106-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/catalog-service/default": Connection refused. Will be trying the next url if available
+2024-03-28T17:59:38.106-04:00  WARN 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@3b1a3125 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/catalog-service/default": Connection refused
+2024-03-28T17:59:38.106-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-03-28T17:59:38.106-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/catalog-service/default": Connection refused. Will be trying the next url if available
+2024-03-28T17:59:38.106-04:00  WARN 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@4199761d uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/catalog-service/default": Connection refused
+2024-03-28T17:59:38.106-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-03-28T17:59:38.106-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/catalog-service/default": Connection refused. Will be trying the next url if available
+2024-03-28T17:59:38.106-04:00  WARN 51452 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@3ca564aa uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/catalog-service/default": Connection refused
+2024-03-28T17:59:38.338-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-28T17:59:38.339-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-28T17:59:38.339-04:00  INFO 51452 --- [catalog-service] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-28T17:59:38.351-04:00  INFO 51452 --- [catalog-service] [    Test worker] c.p.c.web.BookControllerMvcTests         : Started BookControllerMvcTests in 0.282 seconds (process running for 2.985)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
