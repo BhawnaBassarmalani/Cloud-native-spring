@@ -15,8 +15,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
-      request-connect-timeout: 5000 # 5s
-      request-read-timeout: 5000 # 5s
+      request-connect-timeout: 5000 # 5s # timeout on waiting to connect to the config server
+      request-read-timeout: 5000 # 5s  #timeout on waiting to read configuration data from the config server
       fail-fast: false # In production, set to true
       retry:
         max-attempts: 6

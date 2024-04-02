@@ -8,6 +8,13 @@ server:
       min-spare: 5
 
 spring:
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/polardb_catalog
+  hikari:
+    connection-timeout : 2000
+    maximum-pool-size: 5
   application:
     name: catalog-service
   config:
@@ -15,8 +22,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
-      request-connect-timeout: 5000 # 5s
-      request-read-timeout: 5000 # 5s
+      request-connect-timeout: 5000 # 5s # timeout on waiting to connect to the config server
+      request-read-timeout: 5000 # 5s  #timeout on waiting to read configuration data from the config server
       fail-fast: false # In production, set to true
       retry:
         max-attempts: 6
