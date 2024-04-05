@@ -37,6 +37,8 @@ public class BookService {
                 .map(existingBook -> {
                     var bookToUpdate = new Book(
                             existingBook.id(),
+                            existingBook.createdDate(),
+                            existingBook.lastModifiedDate(),
                             existingBook.isbn(),
                             book.title(),
                             book.author(),
