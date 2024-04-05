@@ -8,6 +8,15 @@ jobs:
     permissions:
       contents: read
       security-events: write
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_DB: polardb_catalog
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+        ports:
+          -5433:5433
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
